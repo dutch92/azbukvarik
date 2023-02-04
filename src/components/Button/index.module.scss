@@ -1,0 +1,40 @@
+.button {
+  font-family: 'Rubik', serif;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 15%;
+  position: relative;
+  aspect-ratio: 1;
+}
+
+.background {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 15%;
+}
+
+.background:after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  background: linear-gradient(transparent, #00000047) left repeat;
+}
+
+.letter {
+  position: absolute;
+  top: 6px;
+  left: 10px;
+}
+
+.char {
+  color: #fff;
+  text-shadow: #00000042 0 2px 0;
+  font-size: min(5vw, 45px);
+}

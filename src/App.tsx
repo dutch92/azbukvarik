@@ -1,12 +1,12 @@
 import Button from "./components/Button";
 import s from './App.module.scss';
-import {letters} from "./structures/letters";
+import {buttons} from "./structures/buttons";
 
 function App() {
   return (
     <div className="App">
         <div className={s.letters}>
-            {letters.map(l => <Button letter={l} />)}
+            {buttons.map(l => <Button key={l.id} letter={l} />)}
         </div>
     </div>
   )
